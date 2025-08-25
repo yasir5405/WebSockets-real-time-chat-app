@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Backend server for a basic chat app using web sockets",
+  "license": "ISC",
+  "author": "Yasir Naseem",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "dependencies": {
+    "@types/ws": "^8.18.1",
+    "nodemon": "^3.1.10",
+    "ws": "^8.18.3"
+  }
+}
