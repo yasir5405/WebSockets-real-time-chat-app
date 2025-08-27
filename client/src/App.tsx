@@ -1,9 +1,14 @@
+import { Route, Routes } from "react-router-dom";
+import Room from "./components/Room";
+import Chat from "./components/Chat";
+
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-        Welcome to Real Time Chat App!
-      </h1>
+    <div className="w-full min-h-dvh bg-neutral-950 flex items-center justify-center text-neutral-300">
+      <Routes>
+        <Route path="/" element={<Room />} />
+        <Route path="/chat" element={<Chat />} />
+      </Routes>
     </div>
   );
 };
